@@ -1,0 +1,32 @@
+
+sizeScale = 0.314159265
+greyscale = 0
+
+
+startshape A 	 
+CF::Size=[y -2 x -2 s 5 5]
+shape A {    
+  backgroundstuff[y 2 x 2 s 4 b -1]
+  loop 5[y 1] loop 5[x 1] loop 4[r 90] petal6 [ x 0.5 r 120.21 s 0.996 x 0.5 b 0.005 ]
+
+}
+
+
+shape petal6 {
+	SQUARE [ s 1 0.001 ]
+	CIRCLE [ x -0.5 s 0.05 b -1 ]
+	petal6 [ x 0.5 r 120.1 s 0.996 x 0.5 b 0.005 ]
+}
+shape backgroundstuff {
+	CIRCLE [y 0 x 0 s 0.5 sat 1]
+	backgroundstuff[x 0.5 y 0.5 s sizeScale b greyscale]
+	backgroundstuff[x 0.5 y -0.5 s sizeScale b greyscale]
+	backgroundstuff[x -0.5 y 0.5 s sizeScale b greyscale]
+	backgroundstuff[x -0.5 y -0.5 s sizeScale b greyscale]
+	backgroundstuff[x 0 y 0.5 s sizeScale b greyscale]
+	backgroundstuff[x 0 y -0.5 s sizeScale b greyscale]
+	backgroundstuff[x -0.5 y 0 s sizeScale b greyscale]
+	backgroundstuff[x 0.5 y -0 s sizeScale b greyscale]
+
+
+}
